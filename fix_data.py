@@ -22,7 +22,7 @@ def merge_json_data():
     # 2. Wczytaj ostatni update (update1.json)
     if os.path.exists(PATH_UPDATE_FRONT):
         with open(PATH_UPDATE_FRONT, 'r', encoding='utf-8') as f:
-            update_data = json.json.load(f)
+            update_data = json.load(f)
         
         # Merge: Dla każdego zespołu w update, zaktualizuj bazę
         for team, new_stats in update_data.items():
