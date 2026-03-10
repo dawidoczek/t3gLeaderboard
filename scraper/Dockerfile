@@ -15,4 +15,4 @@ COPY . .
 RUN mkdir -p /app/browser_data /app/updejty
 
 # Komenda startowa
-CMD ["python", "dupa1.py"]
+CMD ["python", "main.py"]
