@@ -1,0 +1,8 @@
+services:
+  insta-scraper:
+    build: .
+    volumes:
+      - ./state.json:/app/state.json
+      - ./updejty:/app/updejty            # Tu lądują wyniki updateX.json
+    environment:
+      - PYTHONUNBUFFERED=1
