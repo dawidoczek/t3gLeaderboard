@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, useEffect } from "react"
 import rawData from "../dane.json"; 
 import { sortOptions, SortField, InstagramAccount } from "@/lib/instagram-data"
 import { LeaderboardCard } from "./leaderboard-card"
@@ -9,36 +9,85 @@ import { ChevronDown, Trophy, ArrowUpDown } from "lucide-react"
 export function Leaderboard() {
   const [sortBy, setSortBy] = useState<SortField>("followers_count")
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  
+  // Stany do obsługi LocalStorage (zabezpieczenie przed błędem hydracji Next.js)
+  const [isClient, setIsClient] = useState(false)
+  const [lastSeenUpdate, setLastSeenUpdate] = useState<string | null>(null)
+
+  useEffect(() => {
+    // Odpala się tylko w przeglądarce po pierwszym załadowaniu
+    setIsClient(true)
+    
+    // 1. Odczytujemy kiedy użytkownik był tu ostatnio
+    const storedLastSeen = localStorage.getItem("instagram_last_seen")
+    setLastSeenUpdate(storedLastSeen)
+
+    // 2. Szukamy "najświeższej" daty ze wszystkich danych w bazie
+    let globalLatestDate = ""
+    Object.values(rawData).forEach((team: any) => {
+      const history = team.updates || []
+      if (history.length > 0) {
+        const teamLatestDate = history[history.length - 1].updated_at
+        if (teamLatestDate && teamLatestDate > globalLatestDate) {
+          globalLatestDate = teamLatestDate
+        }
+      }
+    })
+
+    // 3. Zapisujemy nową najświeższą datę do localStorage. 
+    // Przy kolejnym wejściu na stronę, ta nowa data stanie się jego "storedLastSeen".
+    if (globalLatestDate && storedLastSeen !== globalLatestDate) {
+      localStorage.setItem("instagram_last_seen", globalLatestDate)
+    }
+  }, [])
 
   const instagramData = useMemo(() => {
     return Object.entries(rawData).map(([teamName, baseData]) => {
       const base = baseData as any;
       const history = base.updates || [];
       
-      // Pobieramy dwa ostatnie wpisy z historii
-      const current = history.length >= 1 ? history[history.length - 1] : base;
-      const previous = history.length >= 2 ? history[history.length - 2] : null;
+      const current = history.length > 0 ? history[history.length - 1] : base;
+      let previous = current; // Domyślnie brak wzrostu (current vs current)
       
       let growth = { followers: 0, engagement: 0, likes: 0, posts: 0 };
 
-      // Jeśli mamy historię (przynajmniej 2 wpisy), liczmy wzrost między nimi
-      if (previous) {
+      // Wzrosty liczymy tylko po załadowaniu na kliencie
+      if (isClient) {
+        if (!lastSeenUpdate) {
+          // SCENARIUSZ 1: Użytkownik wchodzi PIERWSZY RAZ w życiu
+          // Porównujemy najnowszy update z "bazą" (pierwotnym stanem konta)
+          previous = base;
+        } else {
+          // SCENARIUSZ 2: Użytkownik wraca na stronę
+          if (current.updated_at && current.updated_at > lastSeenUpdate) {
+            // Mamy NOWY update, którego jeszcze nie widział!
+            // Szukamy w historii najnowszego wpisu, który widział podczas ostatniej wizyty
+            const seenUpdates = history.filter((u: any) => u.updated_at <= lastSeenUpdate);
+            previous = seenUpdates.length > 0 ? seenUpdates[seenUpdates.length - 1] : base;
+          } else {
+            // SCENARIUSZ 3: Widział już te dane (odświeżył stronę)
+            // previous pozostaje jako current, więc wzrost wyjdzie 0
+            previous = current; 
+          }
+        }
+
+        // Obliczamy matematyczną różnicę
         growth = {
           followers: current.followers_count - previous.followers_count,
-          engagement: parseFloat(current.engagement_rate) - parseFloat(previous.engagement_rate),
+          engagement: parseFloat(current.engagement_rate || "0") - parseFloat(previous.engagement_rate || "0"),
           likes: current.total_likes_analyzed - previous.total_likes_analyzed,
           posts: current.total_media_count - previous.total_media_count,
         };
       }
 
       return {
-        ...base,           // Dane bazowe (id, avatar, bio)
-        ...current,        // Nadpisujemy najświeższymi danymi z historii
+        ...base,           
+        ...current,        
         team_name: teamName,
-        growth: growth     // Dodajemy obliczony trend
+        growth: growth     
       };
     });
-  }, []);
+  }, [isClient, lastSeenUpdate]); // Ważne: useMemo przeliczy się po odczytaniu z localStorage
 
   const sortedAccounts = useMemo(() => {
     const activeAccounts = instagramData.filter(
@@ -136,7 +185,7 @@ export function Leaderboard() {
 
       <div className="mt-8 text-center">
         <p className="text-sm text-muted-foreground">
-          Dane historyczne są teraz czytane bezpośrednio z bazy.
+          Dane odświeżane są co tydzień jak nie zapomne lol.
         </p>
       </div>
     </div>
