@@ -48,7 +48,6 @@ def merge_all_scraper_updates():
                 # Dodaj do listy historycznej
                 base_data[team]['updates'].append(stats.copy())
                 # Zaktualizuj główne pola na najświeższe jakie znajdziesz w pętli
-                base_data[team].update(stats)
                 newest_update_data[team] = stats # Zachowaj do update1.json
         
     # 3. Zapisz zaktualizowane dane.json
