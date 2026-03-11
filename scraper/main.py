@@ -5,10 +5,7 @@ from datetime import datetime, timezone
 from playwright.sync_api import sync_playwright # type: ignore
 import time
 os.environ["NODE_OPTIONS"] = "--no-deprecation"
-r"""
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir="/tmp/chrome_dev_session"
 
-"""
 
 instagram_handles = {
     "Cockroach Pulp Games": "cockroachpulp_games",

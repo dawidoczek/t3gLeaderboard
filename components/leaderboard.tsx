@@ -1,8 +1,7 @@
 "use client"
 
 import { useState, useMemo } from "react"
-import rawData from "../dane.json"; // Ścieżka do JSONa w roocie
-import latestUpdate from "../updejty/update1.json";
+import rawData from "../dane.json"; 
 import { sortOptions, SortField, InstagramAccount } from "@/lib/instagram-data"
 import { LeaderboardCard } from "./leaderboard-card"
 import { ChevronDown, Trophy, ArrowUpDown } from "lucide-react"
@@ -10,36 +9,38 @@ import { ChevronDown, Trophy, ArrowUpDown } from "lucide-react"
 export function Leaderboard() {
   const [sortBy, setSortBy] = useState<SortField>("followers_count")
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-const instagramData = useMemo(() => {
-  return Object.entries(rawData).map(([teamName, baseData]) => {
-    const base = baseData as any;
-    const updateData = (latestUpdate as any)[teamName];
-    
-    // 1. Domyślnie wzrost to zera
-    let growth = { followers: 0, engagement: 0, likes: 0, posts: 0 };
 
-    // 2. Jeśli mamy update, obliczamy różnice
-    if (updateData) {
-      growth = {
-        followers: (updateData.followers_count || base.followers_count) - base.followers_count,
-        engagement: parseFloat(updateData.engagement_rate || base.engagement_rate) - parseFloat(base.engagement_rate),
-        likes: (updateData.total_likes_analyzed || base.total_likes_analyzed) - base.total_likes_analyzed,
-        posts: (updateData.total_media_count || base.total_media_count) - base.total_media_count,
+  const instagramData = useMemo(() => {
+    return Object.entries(rawData).map(([teamName, baseData]) => {
+      const base = baseData as any;
+      const history = base.updates || [];
+      
+      // Pobieramy dwa ostatnie wpisy z historii
+      const current = history.length >= 1 ? history[history.length - 1] : base;
+      const previous = history.length >= 2 ? history[history.length - 2] : null;
+      
+      let growth = { followers: 0, engagement: 0, likes: 0, posts: 0 };
+
+      // Jeśli mamy historię (przynajmniej 2 wpisy), liczmy wzrost między nimi
+      if (previous) {
+        growth = {
+          followers: current.followers_count - previous.followers_count,
+          engagement: parseFloat(current.engagement_rate) - parseFloat(previous.engagement_rate),
+          likes: current.total_likes_analyzed - previous.total_likes_analyzed,
+          posts: current.total_media_count - previous.total_media_count,
+        };
+      }
+
+      return {
+        ...base,           // Dane bazowe (id, avatar, bio)
+        ...current,        // Nadpisujemy najświeższymi danymi z historii
+        team_name: teamName,
+        growth: growth     // Dodajemy obliczony trend
       };
-    }
-
-    // 3. SKŁADANIE OBIEKTU (Kolejność ma znaczenie!)
-    return {
-      ...base,           // Najpierw wrzucamy wszystko z oryginału (id, username, bio, avatar)
-      ...updateData,     // Nadpisujemy tylko tym, co jest w pliku update
-      team_name: teamName, // Upewniamy się, że nazwa zespołu jest poprawna
-      growth: growth     // Dodajemy nasze obliczone trendy
-    };
-  });
-}, []);
+    });
+  }, []);
 
   const sortedAccounts = useMemo(() => {
-    // Filter out accounts without usernames (inactive accounts)
     const activeAccounts = instagramData.filter(
       (account) => account.username !== null
     )
@@ -58,7 +59,7 @@ const instagramData = useMemo(() => {
 
       return bValue - aValue
     })
-  }, [sortBy])
+  }, [sortBy, instagramData])
 
   const currentSortLabel = sortOptions.find((opt) => opt.value === sortBy)?.label
 
@@ -133,10 +134,9 @@ const instagramData = useMemo(() => {
         ))}
       </div>
 
-      {/* Footer */}
       <div className="mt-8 text-center">
         <p className="text-sm text-muted-foreground">
-          Dane odświeżane są co tydzień jak nie zapomne lol.
+          Dane historyczne są teraz czytane bezpośrednio z bazy.
         </p>
       </div>
     </div>

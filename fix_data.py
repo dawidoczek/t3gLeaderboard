@@ -3,70 +3,72 @@ import os
 import re
 import shutil
 
-# Ścieżki (dostosuj jeśli nazwy folderów się różnią)
+# Ścieżki
 PATH_BASE_DANE = "dane.json"
 PATH_UPDATE_FRONT = "updejty/update1.json"
 PATH_SCRAPER_UPDATES = "scraper/updejty"
 
-def merge_json_data():
-    print("🔄 Rozpoczynam aktualizację bazy danych (dane.json)...")
+def merge_all_scraper_updates():
+    print(f"🔄 Przeszukuję {PATH_SCRAPER_UPDATES} w poszukiwaniu wszystkich danych...")
     
     # 1. Wczytaj bazę (dane.json)
     if os.path.exists(PATH_BASE_DANE):
         with open(PATH_BASE_DANE, 'r', encoding='utf-8') as f:
             base_data = json.load(f)
     else:
-        print("⚠️ Brak pliku dane.json - stworzę nowy.")
         base_data = {}
 
-    # 2. Wczytaj ostatni update (update1.json)
-    if os.path.exists(PATH_UPDATE_FRONT):
-        with open(PATH_UPDATE_FRONT, 'r', encoding='utf-8') as f:
-            update_data = json.load(f)
-        
-        # Merge: Dla każdego zespołu w update, zaktualizuj bazę
-        for team, new_stats in update_data.items():
-            if team in base_data:
-                # To jest odpowiednik ...base, ...updateData
-                base_data[team].update(new_stats)
-            else:
-                base_data[team] = new_stats
-        
-        # Zapisz zaktualizowane dane.json
-        with open(PATH_BASE_DANE, 'w', encoding='utf-8') as f:
-            json.dump(base_data, f, indent=4, ensure_ascii=False)
-        print(f"✅ Baza {PATH_BASE_DANE} zaktualizowana.")
-    else:
-        print("ℹ️ Brak update1.json do wmergowania. Pomijam ten krok.")
-
-def rotate_latest_update():
-    print(f"📂 Szukam najnowszego raportu w {PATH_SCRAPER_UPDATES}...")
-    
+    # 2. Znajdź wszystkie pliki updateX.json i posortuj je numerami (1, 2, 3...)
     if not os.path.exists(PATH_SCRAPER_UPDATES):
         print("❌ Folder scrapera nie istnieje!")
         return
-
-    # Znajdź wszystkie pliki updateX.json
+    
     files = [f for f in os.listdir(PATH_SCRAPER_UPDATES) if re.match(r'update\d+\.json', f)]
-    
-    if not files:
-        print("❌ Nie znaleziono żadnych plików updateX.json w folderze scrapera.")
-        return
+    # Sortujemy, żeby starsze dane wchodziły do listy 'updates' przed nowszymi
+    files.sort(key=lambda x: int(re.search(r'(\d+)', x).group()))
 
-    # Wyciągnij numer i znajdź najwyższy
-    latest_file = max(files, key=lambda x: int(re.search(r'(\d+)', x).group()))
-    src_path = os.path.join(PATH_SCRAPER_UPDATES, latest_file)
+    newest_update_data = {}
+
+    for file_name in files:
+        file_path = os.path.join(PATH_SCRAPER_UPDATES, file_name)
+        with open(file_path, 'r', encoding='utf-8') as f:
+            current_file_data = json.load(f)
+            
+        for team, stats in current_file_data.items():
+            if team not in base_data:
+                base_data[team] = {"updates": []}
+            
+            if 'updates' not in base_data[team]:
+                base_data[team]['updates'] = []
+
+            # Sprawdź czy ten konkretny update (po dacie) już jest w historii, żeby nie dublować
+            already_exists = any(u.get('updated_at') == stats.get('updated_at') for u in base_data[team]['updates'])
+            
+            if not already_exists:
+                # Dodaj do listy historycznej
+                base_data[team]['updates'].append(stats.copy())
+                # Zaktualizuj główne pola na najświeższe jakie znajdziesz w pętli
+                base_data[team].update(stats)
+                newest_update_data[team] = stats # Zachowaj do update1.json
+        
+    # 3. Zapisz zaktualizowane dane.json
+    with open(PATH_BASE_DANE, 'w', encoding='utf-8') as f:
+        json.dump(base_data, f, indent=4, ensure_ascii=False)
     
-    # Kopiowanie do update1.json na frontendzie
-    # Upewnij się, że folder docelowy istnieje
-    os.makedirs(os.path.dirname(PATH_UPDATE_FRONT), exist_ok=True)
-    shutil.copy2(src_path, PATH_UPDATE_FRONT)
-    
-    print(f"🚀 Najnowszy plik ({latest_file}) skopiowany jako {PATH_UPDATE_FRONT}.")
+    print(f"✅ Baza historyczna {PATH_BASE_DANE} zaktualizowana o wszystkie dostępne pliki.")
+    return newest_update_data
+
+def update_frontend_file(last_stats):
+    # Kopiuje absolutnie najnowsze dane do update1.json dla frontendu
+    if last_stats:
+        os.makedirs(os.path.dirname(PATH_UPDATE_FRONT), exist_ok=True)
+        with open(PATH_UPDATE_FRONT, 'w', encoding='utf-8') as f:
+            json.dump(last_stats, f, indent=4, ensure_ascii=False)
+        print(f"🚀 Plik {PATH_UPDATE_FRONT} odświeżony najnowszymi danymi.")
 
 if __name__ == "__main__":
-    # Kolejność jest ważna: 
-    # Najpierw merge'ujemy stary update1 do bazy, 
-    # a potem nadpisujemy go nowym plikiem ze scrapera.
-    merge_json_data()
-    rotate_latest_update()
+    # 1. Przemiel wszystkie pliki ze scrapera do głównej bazy
+    latest_stats = merge_all_scraper_updates()
+    
+    # 2. Ustaw najświeższy stan w pliku dla frontendu
+    update_frontend_file(latest_stats)

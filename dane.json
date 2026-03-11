@@ -18,7 +18,54 @@
         "comments_to_likes_ratio": "4.762",
         "followers_to_follows_ratio": "2.00",
         "updated_at": "2026-03-10T18:15:41.000000Z",
-        "local_profile_picture": "/avatars/elektryk_entertainment.jpg"
+        "local_profile_picture": "/avatars/elektryk_entertainment.jpg",
+        "updates": [
+            {
+                "followers_count": 40,
+                "follows_count": 20,
+                "total_media_count": 3,
+                "analyzed_posts": 3,
+                "total_likes_analyzed": 63,
+                "total_comments_analyzed": 3,
+                "average_likes": "21.0",
+                "average_comments": "1.0",
+                "engagement_rate": "55.000",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.762",
+                "followers_to_follows_ratio": "2.00",
+                "updated_at": "2026-03-10T18:39:57.000000Z"
+            },
+            {
+                "followers_count": 40,
+                "follows_count": 20,
+                "total_media_count": 3,
+                "analyzed_posts": 3,
+                "total_likes_analyzed": 63,
+                "total_comments_analyzed": 3,
+                "average_likes": "21.0",
+                "average_comments": "1.0",
+                "engagement_rate": "55.000",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.762",
+                "followers_to_follows_ratio": "2.00",
+                "updated_at": "2026-03-09T21:26:49.000000Z"
+            },
+            {
+                "followers_count": 40,
+                "follows_count": 20,
+                "total_media_count": 3,
+                "analyzed_posts": 3,
+                "total_likes_analyzed": 63,
+                "total_comments_analyzed": 3,
+                "average_likes": "21.0",
+                "average_comments": "1.0",
+                "engagement_rate": "55.000",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.762",
+                "followers_to_follows_ratio": "2.00",
+                "updated_at": "2026-03-10T18:15:41.000000Z"
+            }
+        ]
     },
     "PixelFlower": {
         "id": "79590071801",
@@ -39,7 +86,54 @@
         "comments_to_likes_ratio": "7.317",
         "followers_to_follows_ratio": "2.80",
         "updated_at": "2026-03-10T18:16:01.000000Z",
-        "local_profile_picture": "/avatars/pixelflower.jpg"
+        "local_profile_picture": "/avatars/pixelflower.jpg",
+        "updates": [
+            {
+                "followers_count": 14,
+                "follows_count": 5,
+                "total_media_count": 4,
+                "analyzed_posts": 4,
+                "total_likes_analyzed": 41,
+                "total_comments_analyzed": 3,
+                "average_likes": "10.2",
+                "average_comments": "0.8",
+                "engagement_rate": "78.571",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "7.317",
+                "followers_to_follows_ratio": "2.80",
+                "updated_at": "2026-03-10T18:40:17.000000Z"
+            },
+            {
+                "followers_count": 14,
+                "follows_count": 5,
+                "total_media_count": 4,
+                "analyzed_posts": 4,
+                "total_likes_analyzed": 41,
+                "total_comments_analyzed": 3,
+                "average_likes": "10.2",
+                "average_comments": "0.8",
+                "engagement_rate": "78.571",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "7.317",
+                "followers_to_follows_ratio": "2.80",
+                "updated_at": "2026-03-09T21:27:06.000000Z"
+            },
+            {
+                "followers_count": 14,
+                "follows_count": 5,
+                "total_media_count": 4,
+                "analyzed_posts": 4,
+                "total_likes_analyzed": 41,
+                "total_comments_analyzed": 3,
+                "average_likes": "10.2",
+                "average_comments": "0.8",
+                "engagement_rate": "78.571",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "7.317",
+                "followers_to_follows_ratio": "2.80",
+                "updated_at": "2026-03-10T18:16:01.000000Z"
+            }
+        ]
     },
     "Playground": {
         "id": "79623662315",
@@ -60,7 +154,54 @@
         "comments_to_likes_ratio": "0.000",
         "followers_to_follows_ratio": "2.00",
         "updated_at": "2026-03-10T18:16:47.000000Z",
-        "local_profile_picture": "/avatars/playground.jpg"
+        "local_profile_picture": "/avatars/playground.jpg",
+        "updates": [
+            {
+                "followers_count": 2,
+                "follows_count": 1,
+                "total_media_count": 6,
+                "analyzed_posts": 6,
+                "total_likes_analyzed": 8,
+                "total_comments_analyzed": 0,
+                "average_likes": "1.3",
+                "average_comments": "0.0",
+                "engagement_rate": "66.667",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.000",
+                "followers_to_follows_ratio": "2.00",
+                "updated_at": "2026-03-10T18:41:02.000000Z"
+            },
+            {
+                "followers_count": 2,
+                "follows_count": 1,
+                "total_media_count": 6,
+                "analyzed_posts": 6,
+                "total_likes_analyzed": 8,
+                "total_comments_analyzed": 0,
+                "average_likes": "1.3",
+                "average_comments": "0.0",
+                "engagement_rate": "66.667",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.000",
+                "followers_to_follows_ratio": "2.00",
+                "updated_at": "2026-03-09T21:28:05.000000Z"
+            },
+            {
+                "followers_count": 2,
+                "follows_count": 1,
+                "total_media_count": 6,
+                "analyzed_posts": 6,
+                "total_likes_analyzed": 8,
+                "total_comments_analyzed": 0,
+                "average_likes": "1.3",
+                "average_comments": "0.0",
+                "engagement_rate": "66.667",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.000",
+                "followers_to_follows_ratio": "2.00",
+                "updated_at": "2026-03-10T18:16:47.000000Z"
+            }
+        ]
     },
     "Artificail Idiots": {
         "id": "80062113242",
@@ -81,7 +222,54 @@
         "comments_to_likes_ratio": "21.053",
         "followers_to_follows_ratio": "0.72",
         "updated_at": "2026-03-10T18:18:44.000000Z",
-        "local_profile_picture": "/avatars/artificail_idiots.jpg"
+        "local_profile_picture": "/avatars/artificail_idiots.jpg",
+        "updates": [
+            {
+                "followers_count": 13,
+                "follows_count": 18,
+                "total_media_count": 4,
+                "analyzed_posts": 4,
+                "total_likes_analyzed": 19,
+                "total_comments_analyzed": 4,
+                "average_likes": "4.8",
+                "average_comments": "1.0",
+                "engagement_rate": "44.231",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "21.053",
+                "followers_to_follows_ratio": "0.72",
+                "updated_at": "2026-03-10T18:42:58.000000Z"
+            },
+            {
+                "followers_count": 13,
+                "follows_count": 18,
+                "total_media_count": 4,
+                "analyzed_posts": 4,
+                "total_likes_analyzed": 19,
+                "total_comments_analyzed": 4,
+                "average_likes": "4.8",
+                "average_comments": "1.0",
+                "engagement_rate": "44.231",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "21.053",
+                "followers_to_follows_ratio": "0.72",
+                "updated_at": "2026-03-09T21:29:36.000000Z"
+            },
+            {
+                "followers_count": 13,
+                "follows_count": 18,
+                "total_media_count": 4,
+                "analyzed_posts": 4,
+                "total_likes_analyzed": 19,
+                "total_comments_analyzed": 4,
+                "average_likes": "4.8",
+                "average_comments": "1.0",
+                "engagement_rate": "44.231",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "21.053",
+                "followers_to_follows_ratio": "0.72",
+                "updated_at": "2026-03-10T18:18:44.000000Z"
+            }
+        ]
     },
     "Knedle": {
         "id": "79927350506",
@@ -102,7 +290,54 @@
         "comments_to_likes_ratio": "0.383",
         "followers_to_follows_ratio": "20.50",
         "updated_at": "2026-03-10T18:19:29.000000Z",
-        "local_profile_picture": "/avatars/knedle.jpg"
+        "local_profile_picture": "/avatars/knedle.jpg",
+        "updates": [
+            {
+                "followers_count": 41,
+                "follows_count": 2,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 263,
+                "total_comments_analyzed": 1,
+                "average_likes": "21.9",
+                "average_comments": "0.1",
+                "engagement_rate": "53.659",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.380",
+                "followers_to_follows_ratio": "20.50",
+                "updated_at": "2026-03-10T18:43:44.000000Z"
+            },
+            {
+                "followers_count": 41,
+                "follows_count": 2,
+                "total_media_count": 11,
+                "analyzed_posts": 11,
+                "total_likes_analyzed": 251,
+                "total_comments_analyzed": 1,
+                "average_likes": "22.8",
+                "average_comments": "0.1",
+                "engagement_rate": "55.876",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.398",
+                "followers_to_follows_ratio": "20.50",
+                "updated_at": "2026-03-09T21:30:14.000000Z"
+            },
+            {
+                "followers_count": 41,
+                "follows_count": 2,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 261,
+                "total_comments_analyzed": 1,
+                "average_likes": "21.8",
+                "average_comments": "0.1",
+                "engagement_rate": "53.252",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.383",
+                "followers_to_follows_ratio": "20.50",
+                "updated_at": "2026-03-10T18:19:29.000000Z"
+            }
+        ]
     },
     "Komornicy": {
         "id": "79970841139",
@@ -123,7 +358,54 @@
         "comments_to_likes_ratio": "2.871",
         "followers_to_follows_ratio": "3.56",
         "updated_at": "2026-03-10T18:19:53.000000Z",
-        "local_profile_picture": "/avatars/komornicy.jpg"
+        "local_profile_picture": "/avatars/komornicy.jpg",
+        "updates": [
+            {
+                "followers_count": 32,
+                "follows_count": 9,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 209,
+                "total_comments_analyzed": 6,
+                "average_likes": "17.4",
+                "average_comments": "0.5",
+                "engagement_rate": "55.990",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "2.871",
+                "followers_to_follows_ratio": "3.56",
+                "updated_at": "2026-03-10T18:44:09.000000Z"
+            },
+            {
+                "followers_count": 32,
+                "follows_count": 9,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 208,
+                "total_comments_analyzed": 6,
+                "average_likes": "17.3",
+                "average_comments": "0.5",
+                "engagement_rate": "55.729",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "2.885",
+                "followers_to_follows_ratio": "3.56",
+                "updated_at": "2026-03-09T21:30:36.000000Z"
+            },
+            {
+                "followers_count": 32,
+                "follows_count": 9,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 209,
+                "total_comments_analyzed": 6,
+                "average_likes": "17.4",
+                "average_comments": "0.5",
+                "engagement_rate": "55.990",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "2.871",
+                "followers_to_follows_ratio": "3.56",
+                "updated_at": "2026-03-10T18:19:53.000000Z"
+            }
+        ]
     },
     "Żegluga za Komputerem": {
         "id": "79775679937",
@@ -144,7 +426,54 @@
         "comments_to_likes_ratio": "5.668",
         "followers_to_follows_ratio": "3.86",
         "updated_at": "2026-03-10T18:20:16.000000Z",
-        "local_profile_picture": "/avatars/żegluga_za_komputerem.jpg"
+        "local_profile_picture": "/avatars/żegluga_za_komputerem.jpg",
+        "updates": [
+            {
+                "followers_count": 54,
+                "follows_count": 14,
+                "total_media_count": 9,
+                "analyzed_posts": 9,
+                "total_likes_analyzed": 247,
+                "total_comments_analyzed": 14,
+                "average_likes": "27.4",
+                "average_comments": "1.6",
+                "engagement_rate": "53.704",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "5.668",
+                "followers_to_follows_ratio": "3.86",
+                "updated_at": "2026-03-10T18:44:33.000000Z"
+            },
+            {
+                "followers_count": 54,
+                "follows_count": 14,
+                "total_media_count": 9,
+                "analyzed_posts": 9,
+                "total_likes_analyzed": 247,
+                "total_comments_analyzed": 14,
+                "average_likes": "27.4",
+                "average_comments": "1.6",
+                "engagement_rate": "53.704",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "5.668",
+                "followers_to_follows_ratio": "3.86",
+                "updated_at": "2026-03-09T21:30:56.000000Z"
+            },
+            {
+                "followers_count": 54,
+                "follows_count": 14,
+                "total_media_count": 9,
+                "analyzed_posts": 9,
+                "total_likes_analyzed": 247,
+                "total_comments_analyzed": 14,
+                "average_likes": "27.4",
+                "average_comments": "1.6",
+                "engagement_rate": "53.704",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "5.668",
+                "followers_to_follows_ratio": "3.86",
+                "updated_at": "2026-03-10T18:20:16.000000Z"
+            }
+        ]
     },
     "Mechan": {
         "id": "80231608942",
@@ -165,7 +494,54 @@
         "comments_to_likes_ratio": "9.091",
         "followers_to_follows_ratio": "0.00",
         "updated_at": "2026-03-10T18:20:36.000000Z",
-        "local_profile_picture": "/avatars/mechan.jpg"
+        "local_profile_picture": "/avatars/mechan.jpg",
+        "updates": [
+            {
+                "followers_count": 23,
+                "follows_count": 0,
+                "total_media_count": 2,
+                "analyzed_posts": 2,
+                "total_likes_analyzed": 22,
+                "total_comments_analyzed": 2,
+                "average_likes": "11.0",
+                "average_comments": "1.0",
+                "engagement_rate": "52.174",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "9.091",
+                "followers_to_follows_ratio": "0.00",
+                "updated_at": "2026-03-10T18:44:52.000000Z"
+            },
+            {
+                "followers_count": 23,
+                "follows_count": 0,
+                "total_media_count": 2,
+                "analyzed_posts": 2,
+                "total_likes_analyzed": 22,
+                "total_comments_analyzed": 2,
+                "average_likes": "11.0",
+                "average_comments": "1.0",
+                "engagement_rate": "52.174",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "9.091",
+                "followers_to_follows_ratio": "0.00",
+                "updated_at": "2026-03-09T21:31:13.000000Z"
+            },
+            {
+                "followers_count": 23,
+                "follows_count": 0,
+                "total_media_count": 2,
+                "analyzed_posts": 2,
+                "total_likes_analyzed": 22,
+                "total_comments_analyzed": 2,
+                "average_likes": "11.0",
+                "average_comments": "1.0",
+                "engagement_rate": "52.174",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "9.091",
+                "followers_to_follows_ratio": "0.00",
+                "updated_at": "2026-03-10T18:20:36.000000Z"
+            }
+        ]
     },
     "Monochrome Studio": {
         "id": "79599862417",
@@ -186,7 +562,54 @@
         "comments_to_likes_ratio": "0.813",
         "followers_to_follows_ratio": "1.40",
         "updated_at": "2026-03-10T18:22:21.000000Z",
-        "local_profile_picture": "/avatars/monochrome_studio.jpg"
+        "local_profile_picture": "/avatars/monochrome_studio.jpg",
+        "updates": [
+            {
+                "followers_count": 21,
+                "follows_count": 15,
+                "total_media_count": 9,
+                "analyzed_posts": 9,
+                "total_likes_analyzed": 1972,
+                "total_comments_analyzed": 16,
+                "average_likes": "219.1",
+                "average_comments": "1.8",
+                "engagement_rate": "1051.852",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.811",
+                "followers_to_follows_ratio": "1.40",
+                "updated_at": "2026-03-10T18:46:39.000000Z"
+            },
+            {
+                "followers_count": 21,
+                "follows_count": 15,
+                "total_media_count": 9,
+                "analyzed_posts": 9,
+                "total_likes_analyzed": 1961,
+                "total_comments_analyzed": 16,
+                "average_likes": "217.9",
+                "average_comments": "1.8",
+                "engagement_rate": "1046.032",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.816",
+                "followers_to_follows_ratio": "1.40",
+                "updated_at": "2026-03-09T21:32:45.000000Z"
+            },
+            {
+                "followers_count": 21,
+                "follows_count": 15,
+                "total_media_count": 9,
+                "analyzed_posts": 9,
+                "total_likes_analyzed": 1967,
+                "total_comments_analyzed": 16,
+                "average_likes": "218.6",
+                "average_comments": "1.8",
+                "engagement_rate": "1049.206",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.813",
+                "followers_to_follows_ratio": "1.40",
+                "updated_at": "2026-03-10T18:22:21.000000Z"
+            }
+        ]
     },
     "Polar Bears Inc.": {
         "id": "71381022747",
@@ -207,7 +630,54 @@
         "comments_to_likes_ratio": "3.911",
         "followers_to_follows_ratio": "1.76",
         "updated_at": "2026-03-10T18:23:36.000000Z",
-        "local_profile_picture": "/avatars/polar_bears_inc.jpg"
+        "local_profile_picture": "/avatars/polar_bears_inc.jpg",
+        "updates": [
+            {
+                "followers_count": 88,
+                "follows_count": 50,
+                "total_media_count": 30,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 767,
+                "total_comments_analyzed": 30,
+                "average_likes": "25.6",
+                "average_comments": "1.0",
+                "engagement_rate": "30.189",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "3.911",
+                "followers_to_follows_ratio": "1.76",
+                "updated_at": "2026-03-10T18:47:57.000000Z"
+            },
+            {
+                "followers_count": 88,
+                "follows_count": 50,
+                "total_media_count": 30,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 767,
+                "total_comments_analyzed": 30,
+                "average_likes": "25.6",
+                "average_comments": "1.0",
+                "engagement_rate": "30.189",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "3.911",
+                "followers_to_follows_ratio": "1.76",
+                "updated_at": "2026-03-09T21:33:50.000000Z"
+            },
+            {
+                "followers_count": 88,
+                "follows_count": 50,
+                "total_media_count": 30,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 767,
+                "total_comments_analyzed": 30,
+                "average_likes": "25.6",
+                "average_comments": "1.0",
+                "engagement_rate": "30.189",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "3.911",
+                "followers_to_follows_ratio": "1.76",
+                "updated_at": "2026-03-10T18:23:36.000000Z"
+            }
+        ]
     },
     "FC Royal Mońki": {
         "id": "80005959958",
@@ -228,7 +698,54 @@
         "comments_to_likes_ratio": "0.000",
         "followers_to_follows_ratio": "1.25",
         "updated_at": "2026-03-10T18:23:55.000000Z",
-        "local_profile_picture": "/avatars/fc_royal_mońki.jpg"
+        "local_profile_picture": "/avatars/fc_royal_mońki.jpg",
+        "updates": [
+            {
+                "followers_count": 5,
+                "follows_count": 4,
+                "total_media_count": 2,
+                "analyzed_posts": 2,
+                "total_likes_analyzed": 4,
+                "total_comments_analyzed": 0,
+                "average_likes": "2.0",
+                "average_comments": "0.0",
+                "engagement_rate": "40.000",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.000",
+                "followers_to_follows_ratio": "1.25",
+                "updated_at": "2026-03-10T18:48:16.000000Z"
+            },
+            {
+                "followers_count": 5,
+                "follows_count": 4,
+                "total_media_count": 2,
+                "analyzed_posts": 2,
+                "total_likes_analyzed": 4,
+                "total_comments_analyzed": 0,
+                "average_likes": "2.0",
+                "average_comments": "0.0",
+                "engagement_rate": "40.000",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.000",
+                "followers_to_follows_ratio": "1.25",
+                "updated_at": "2026-03-09T21:34:06.000000Z"
+            },
+            {
+                "followers_count": 5,
+                "follows_count": 4,
+                "total_media_count": 2,
+                "analyzed_posts": 2,
+                "total_likes_analyzed": 4,
+                "total_comments_analyzed": 0,
+                "average_likes": "2.0",
+                "average_comments": "0.0",
+                "engagement_rate": "40.000",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.000",
+                "followers_to_follows_ratio": "1.25",
+                "updated_at": "2026-03-10T18:23:55.000000Z"
+            }
+        ]
     },
     "Stokrotki": {
         "id": "78388875518",
@@ -249,7 +766,54 @@
         "comments_to_likes_ratio": "11.111",
         "followers_to_follows_ratio": "2.56",
         "updated_at": "2026-03-10T18:24:19.000000Z",
-        "local_profile_picture": "/avatars/stokrotki.jpg"
+        "local_profile_picture": "/avatars/stokrotki.jpg",
+        "updates": [
+            {
+                "followers_count": 23,
+                "follows_count": 9,
+                "total_media_count": 11,
+                "analyzed_posts": 11,
+                "total_likes_analyzed": 171,
+                "total_comments_analyzed": 19,
+                "average_likes": "15.5",
+                "average_comments": "1.7",
+                "engagement_rate": "75.099",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "11.111",
+                "followers_to_follows_ratio": "2.56",
+                "updated_at": "2026-03-10T18:48:40.000000Z"
+            },
+            {
+                "followers_count": 23,
+                "follows_count": 9,
+                "total_media_count": 11,
+                "analyzed_posts": 11,
+                "total_likes_analyzed": 171,
+                "total_comments_analyzed": 19,
+                "average_likes": "15.5",
+                "average_comments": "1.7",
+                "engagement_rate": "75.099",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "11.111",
+                "followers_to_follows_ratio": "2.56",
+                "updated_at": "2026-03-09T21:34:28.000000Z"
+            },
+            {
+                "followers_count": 23,
+                "follows_count": 9,
+                "total_media_count": 11,
+                "analyzed_posts": 11,
+                "total_likes_analyzed": 171,
+                "total_comments_analyzed": 19,
+                "average_likes": "15.5",
+                "average_comments": "1.7",
+                "engagement_rate": "75.099",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "11.111",
+                "followers_to_follows_ratio": "2.56",
+                "updated_at": "2026-03-10T18:24:19.000000Z"
+            }
+        ]
     },
     "BronkDEV": {
         "id": "78135036874",
@@ -270,7 +834,54 @@
         "comments_to_likes_ratio": "10.127",
         "followers_to_follows_ratio": "1.38",
         "updated_at": "2026-03-10T18:24:43.000000Z",
-        "local_profile_picture": "/avatars/bronkdev.jpg"
+        "local_profile_picture": "/avatars/bronkdev.jpg",
+        "updates": [
+            {
+                "followers_count": 29,
+                "follows_count": 21,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 79,
+                "total_comments_analyzed": 8,
+                "average_likes": "6.6",
+                "average_comments": "0.7",
+                "engagement_rate": "25.000",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "10.127",
+                "followers_to_follows_ratio": "1.38",
+                "updated_at": "2026-03-10T18:51:51.000000Z"
+            },
+            {
+                "followers_count": 28,
+                "follows_count": 21,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 79,
+                "total_comments_analyzed": 8,
+                "average_likes": "6.6",
+                "average_comments": "0.7",
+                "engagement_rate": "25.893",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "10.127",
+                "followers_to_follows_ratio": "1.33",
+                "updated_at": "2026-03-09T21:34:49.000000Z"
+            },
+            {
+                "followers_count": 29,
+                "follows_count": 21,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 79,
+                "total_comments_analyzed": 8,
+                "average_likes": "6.6",
+                "average_comments": "0.7",
+                "engagement_rate": "25.000",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "10.127",
+                "followers_to_follows_ratio": "1.38",
+                "updated_at": "2026-03-10T18:24:43.000000Z"
+            }
+        ]
     },
     "Cockroach Pulp Games": {
         "id": "17841479915569436",
@@ -291,7 +902,54 @@
         "comments_to_likes_ratio": "15.190",
         "followers_to_follows_ratio": "3.40",
         "updated_at": "2026-03-10T18:14:18.000000Z",
-        "local_profile_picture": "/avatars/cockroach_pulp_games.jpg"
+        "local_profile_picture": "/avatars/cockroach_pulp_games.jpg",
+        "updates": [
+            {
+                "followers_count": 17,
+                "follows_count": 5,
+                "total_media_count": 10,
+                "analyzed_posts": 10,
+                "total_likes_analyzed": 79,
+                "total_comments_analyzed": 12,
+                "average_likes": "7.9",
+                "average_comments": "1.2",
+                "engagement_rate": "53.529",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "15.190",
+                "followers_to_follows_ratio": "3.40",
+                "updated_at": "2026-03-10T18:38:34.000000Z"
+            },
+            {
+                "followers_count": 17,
+                "follows_count": 5,
+                "total_media_count": 10,
+                "analyzed_posts": 10,
+                "total_likes_analyzed": 79,
+                "total_comments_analyzed": 12,
+                "average_likes": "7.9",
+                "average_comments": "1.2",
+                "engagement_rate": "53.529",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "15.190",
+                "followers_to_follows_ratio": "3.40",
+                "updated_at": "2026-03-09T21:25:41.000000Z"
+            },
+            {
+                "followers_count": 17,
+                "follows_count": 5,
+                "total_media_count": 10,
+                "analyzed_posts": 10,
+                "total_likes_analyzed": 79,
+                "total_comments_analyzed": 12,
+                "average_likes": "7.9",
+                "average_comments": "1.2",
+                "engagement_rate": "53.529",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "15.190",
+                "followers_to_follows_ratio": "3.40",
+                "updated_at": "2026-03-10T18:14:18.000000Z"
+            }
+        ]
     },
     "St. Barbara Studio's": {
         "id": "17841471515332736",
@@ -312,7 +970,54 @@
         "comments_to_likes_ratio": "0.000",
         "followers_to_follows_ratio": "4.75",
         "updated_at": "2026-03-10T18:14:38.000000Z",
-        "local_profile_picture": "/avatars/st_barbara_studio's.jpg"
+        "local_profile_picture": "/avatars/st_barbara_studio's.jpg",
+        "updates": [
+            {
+                "followers_count": 38,
+                "follows_count": 8,
+                "total_media_count": 1,
+                "analyzed_posts": 1,
+                "total_likes_analyzed": 51,
+                "total_comments_analyzed": 0,
+                "average_likes": "51.0",
+                "average_comments": "0.0",
+                "engagement_rate": "134.211",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.000",
+                "followers_to_follows_ratio": "4.75",
+                "updated_at": "2026-03-10T18:38:53.000000Z"
+            },
+            {
+                "followers_count": 38,
+                "follows_count": 8,
+                "total_media_count": 1,
+                "analyzed_posts": 1,
+                "total_likes_analyzed": 51,
+                "total_comments_analyzed": 0,
+                "average_likes": "51.0",
+                "average_comments": "0.0",
+                "engagement_rate": "134.211",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.000",
+                "followers_to_follows_ratio": "4.75",
+                "updated_at": "2026-03-09T21:25:56.000000Z"
+            },
+            {
+                "followers_count": 38,
+                "follows_count": 8,
+                "total_media_count": 1,
+                "analyzed_posts": 1,
+                "total_likes_analyzed": 51,
+                "total_comments_analyzed": 0,
+                "average_likes": "51.0",
+                "average_comments": "0.0",
+                "engagement_rate": "134.211",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "0.000",
+                "followers_to_follows_ratio": "4.75",
+                "updated_at": "2026-03-10T18:14:38.000000Z"
+            }
+        ]
     },
     "Catnip Addict": {
         "id": "17841479983513554",
@@ -333,7 +1038,54 @@
         "comments_to_likes_ratio": "4.706",
         "followers_to_follows_ratio": "5.09",
         "updated_at": "2026-03-10T18:14:59.000000Z",
-        "local_profile_picture": "/avatars/catnip_addict.jpg"
+        "local_profile_picture": "/avatars/catnip_addict.jpg",
+        "updates": [
+            {
+                "followers_count": 56,
+                "follows_count": 11,
+                "total_media_count": 7,
+                "analyzed_posts": 7,
+                "total_likes_analyzed": 170,
+                "total_comments_analyzed": 8,
+                "average_likes": "24.3",
+                "average_comments": "1.1",
+                "engagement_rate": "45.408",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.706",
+                "followers_to_follows_ratio": "5.09",
+                "updated_at": "2026-03-10T18:39:15.000000Z"
+            },
+            {
+                "followers_count": 55,
+                "follows_count": 11,
+                "total_media_count": 7,
+                "analyzed_posts": 7,
+                "total_likes_analyzed": 170,
+                "total_comments_analyzed": 8,
+                "average_likes": "24.3",
+                "average_comments": "1.1",
+                "engagement_rate": "46.234",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.706",
+                "followers_to_follows_ratio": "5.00",
+                "updated_at": "2026-03-09T21:26:15.000000Z"
+            },
+            {
+                "followers_count": 56,
+                "follows_count": 11,
+                "total_media_count": 7,
+                "analyzed_posts": 7,
+                "total_likes_analyzed": 170,
+                "total_comments_analyzed": 8,
+                "average_likes": "24.3",
+                "average_comments": "1.1",
+                "engagement_rate": "45.408",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.706",
+                "followers_to_follows_ratio": "5.09",
+                "updated_at": "2026-03-10T18:14:59.000000Z"
+            }
+        ]
     },
     "Table Entertainment": {
         "id": "17841478389027414",
@@ -354,7 +1106,54 @@
         "comments_to_likes_ratio": "15.000",
         "followers_to_follows_ratio": "3.00",
         "updated_at": "2026-03-10T18:15:21.000000Z",
-        "local_profile_picture": "/avatars/table_entertainment.jpg"
+        "local_profile_picture": "/avatars/table_entertainment.jpg",
+        "updates": [
+            {
+                "followers_count": 15,
+                "follows_count": 5,
+                "total_media_count": 6,
+                "analyzed_posts": 6,
+                "total_likes_analyzed": 60,
+                "total_comments_analyzed": 9,
+                "average_likes": "10.0",
+                "average_comments": "1.5",
+                "engagement_rate": "76.667",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "15.000",
+                "followers_to_follows_ratio": "3.00",
+                "updated_at": "2026-03-10T18:39:37.000000Z"
+            },
+            {
+                "followers_count": 15,
+                "follows_count": 5,
+                "total_media_count": 6,
+                "analyzed_posts": 6,
+                "total_likes_analyzed": 60,
+                "total_comments_analyzed": 9,
+                "average_likes": "10.0",
+                "average_comments": "1.5",
+                "engagement_rate": "76.667",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "15.000",
+                "followers_to_follows_ratio": "3.00",
+                "updated_at": "2026-03-09T21:26:33.000000Z"
+            },
+            {
+                "followers_count": 15,
+                "follows_count": 5,
+                "total_media_count": 6,
+                "analyzed_posts": 6,
+                "total_likes_analyzed": 60,
+                "total_comments_analyzed": 9,
+                "average_likes": "10.0",
+                "average_comments": "1.5",
+                "engagement_rate": "76.667",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "15.000",
+                "followers_to_follows_ratio": "3.00",
+                "updated_at": "2026-03-10T18:15:21.000000Z"
+            }
+        ]
     },
     "ZetaIT": {
         "id": "17841470944445626",
@@ -375,7 +1174,54 @@
         "comments_to_likes_ratio": "2.451",
         "followers_to_follows_ratio": "1.55",
         "updated_at": "2026-03-10T18:16:25.000000Z",
-        "local_profile_picture": "/avatars/zetait.jpg"
+        "local_profile_picture": "/avatars/zetait.jpg",
+        "updates": [
+            {
+                "followers_count": 34,
+                "follows_count": 22,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 204,
+                "total_comments_analyzed": 5,
+                "average_likes": "17.0",
+                "average_comments": "0.4",
+                "engagement_rate": "51.225",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "2.451",
+                "followers_to_follows_ratio": "1.55",
+                "updated_at": "2026-03-10T18:40:41.000000Z"
+            },
+            {
+                "followers_count": 34,
+                "follows_count": 22,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 204,
+                "total_comments_analyzed": 5,
+                "average_likes": "17.0",
+                "average_comments": "0.4",
+                "engagement_rate": "51.225",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "2.451",
+                "followers_to_follows_ratio": "1.55",
+                "updated_at": "2026-03-09T21:40:34.000000Z"
+            },
+            {
+                "followers_count": 34,
+                "follows_count": 22,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 204,
+                "total_comments_analyzed": 5,
+                "average_likes": "17.0",
+                "average_comments": "0.4",
+                "engagement_rate": "51.225",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "2.451",
+                "followers_to_follows_ratio": "1.55",
+                "updated_at": "2026-03-10T18:16:25.000000Z"
+            }
+        ]
     },
     "BlackRadio": {
         "id": null,
@@ -416,7 +1262,54 @@
         "comments_to_likes_ratio": "6.460",
         "followers_to_follows_ratio": "35.59",
         "updated_at": "2026-03-10T18:17:26.000000Z",
-        "local_profile_picture": "/avatars/fundacja_teatrikon.jpg"
+        "local_profile_picture": "/avatars/fundacja_teatrikon.jpg",
+        "updates": [
+            {
+                "followers_count": 783,
+                "follows_count": 22,
+                "total_media_count": 491,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 805,
+                "total_comments_analyzed": 52,
+                "average_likes": "26.8",
+                "average_comments": "1.7",
+                "engagement_rate": "3.648",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "6.460",
+                "followers_to_follows_ratio": "35.59",
+                "updated_at": "2026-03-10T18:41:40.000000Z"
+            },
+            {
+                "followers_count": 783,
+                "follows_count": 22,
+                "total_media_count": 491,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 805,
+                "total_comments_analyzed": 52,
+                "average_likes": "26.8",
+                "average_comments": "1.7",
+                "engagement_rate": "3.648",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "6.460",
+                "followers_to_follows_ratio": "35.59",
+                "updated_at": "2026-03-09T21:41:50.000000Z"
+            },
+            {
+                "followers_count": 783,
+                "follows_count": 22,
+                "total_media_count": 491,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 805,
+                "total_comments_analyzed": 52,
+                "average_likes": "26.8",
+                "average_comments": "1.7",
+                "engagement_rate": "3.648",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "6.460",
+                "followers_to_follows_ratio": "35.59",
+                "updated_at": "2026-03-10T18:17:26.000000Z"
+            }
+        ]
     },
     "Turniej Trójgamiczny": {
         "id": "17841469769473173",
@@ -437,7 +1330,54 @@
         "comments_to_likes_ratio": "1.953",
         "followers_to_follows_ratio": "3.98",
         "updated_at": "2026-03-10T18:18:05.000000Z",
-        "local_profile_picture": "/avatars/turniej_trójgamiczny.jpg"
+        "local_profile_picture": "/avatars/turniej_trójgamiczny.jpg",
+        "updates": [
+            {
+                "followers_count": 255,
+                "follows_count": 64,
+                "total_media_count": 79,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 512,
+                "total_comments_analyzed": 10,
+                "average_likes": "17.1",
+                "average_comments": "0.3",
+                "engagement_rate": "6.824",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "1.953",
+                "followers_to_follows_ratio": "3.98",
+                "updated_at": "2026-03-10T18:42:19.000000Z"
+            },
+            {
+                "followers_count": 255,
+                "follows_count": 64,
+                "total_media_count": 79,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 512,
+                "total_comments_analyzed": 10,
+                "average_likes": "17.1",
+                "average_comments": "0.3",
+                "engagement_rate": "6.824",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "1.953",
+                "followers_to_follows_ratio": "3.98",
+                "updated_at": "2026-03-09T21:29:03.000000Z"
+            },
+            {
+                "followers_count": 255,
+                "follows_count": 64,
+                "total_media_count": 79,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 512,
+                "total_comments_analyzed": 10,
+                "average_likes": "17.1",
+                "average_comments": "0.3",
+                "engagement_rate": "6.824",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "1.953",
+                "followers_to_follows_ratio": "3.98",
+                "updated_at": "2026-03-10T18:18:05.000000Z"
+            }
+        ]
     },
     "Alotis": {
         "id": "17841479719403397",
@@ -458,7 +1398,54 @@
         "comments_to_likes_ratio": "42.857",
         "followers_to_follows_ratio": "0.00",
         "updated_at": "2026-03-10T18:18:24.000000Z",
-        "local_profile_picture": "/avatars/alotis.jpg"
+        "local_profile_picture": "/avatars/alotis.jpg",
+        "updates": [
+            {
+                "followers_count": 8,
+                "follows_count": 0,
+                "total_media_count": 1,
+                "analyzed_posts": 1,
+                "total_likes_analyzed": 7,
+                "total_comments_analyzed": 3,
+                "average_likes": "7.0",
+                "average_comments": "3.0",
+                "engagement_rate": "125.000",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "42.857",
+                "followers_to_follows_ratio": "0.00",
+                "updated_at": "2026-03-10T18:42:38.000000Z"
+            },
+            {
+                "followers_count": 8,
+                "follows_count": 0,
+                "total_media_count": 1,
+                "analyzed_posts": 1,
+                "total_likes_analyzed": 7,
+                "total_comments_analyzed": 3,
+                "average_likes": "7.0",
+                "average_comments": "3.0",
+                "engagement_rate": "125.000",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "42.857",
+                "followers_to_follows_ratio": "0.00",
+                "updated_at": "2026-03-09T21:29:18.000000Z"
+            },
+            {
+                "followers_count": 8,
+                "follows_count": 0,
+                "total_media_count": 1,
+                "analyzed_posts": 1,
+                "total_likes_analyzed": 7,
+                "total_comments_analyzed": 3,
+                "average_likes": "7.0",
+                "average_comments": "3.0",
+                "engagement_rate": "125.000",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "42.857",
+                "followers_to_follows_ratio": "0.00",
+                "updated_at": "2026-03-10T18:18:24.000000Z"
+            }
+        ]
     },
     "Getaway Games": {
         "id": "17841478713003036",
@@ -479,7 +1466,54 @@
         "comments_to_likes_ratio": "10.132",
         "followers_to_follows_ratio": "39.50",
         "updated_at": "2026-03-10T18:19:06.000000Z",
-        "local_profile_picture": "/avatars/getaway_games.jpg"
+        "local_profile_picture": "/avatars/getaway_games.jpg",
+        "updates": [
+            {
+                "followers_count": 79,
+                "follows_count": 2,
+                "total_media_count": 7,
+                "analyzed_posts": 7,
+                "total_likes_analyzed": 227,
+                "total_comments_analyzed": 23,
+                "average_likes": "32.4",
+                "average_comments": "3.3",
+                "engagement_rate": "45.208",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "10.132",
+                "followers_to_follows_ratio": "39.50",
+                "updated_at": "2026-03-10T18:43:20.000000Z"
+            },
+            {
+                "followers_count": 78,
+                "follows_count": 2,
+                "total_media_count": 7,
+                "analyzed_posts": 7,
+                "total_likes_analyzed": 227,
+                "total_comments_analyzed": 23,
+                "average_likes": "32.4",
+                "average_comments": "3.3",
+                "engagement_rate": "45.788",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "10.132",
+                "followers_to_follows_ratio": "39.00",
+                "updated_at": "2026-03-09T21:29:55.000000Z"
+            },
+            {
+                "followers_count": 79,
+                "follows_count": 2,
+                "total_media_count": 7,
+                "analyzed_posts": 7,
+                "total_likes_analyzed": 227,
+                "total_comments_analyzed": 23,
+                "average_likes": "32.4",
+                "average_comments": "3.3",
+                "engagement_rate": "45.208",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "10.132",
+                "followers_to_follows_ratio": "39.50",
+                "updated_at": "2026-03-10T18:19:06.000000Z"
+            }
+        ]
     },
     "Cat Marks": {
         "id": null,
@@ -540,7 +1574,54 @@
         "comments_to_likes_ratio": "4.082",
         "followers_to_follows_ratio": "6.75",
         "updated_at": "2026-03-10T18:21:00.000000Z",
-        "local_profile_picture": "/avatars/dark_district.jpg"
+        "local_profile_picture": "/avatars/dark_district.jpg",
+        "updates": [
+            {
+                "followers_count": 27,
+                "follows_count": 4,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 98,
+                "total_comments_analyzed": 4,
+                "average_likes": "8.2",
+                "average_comments": "0.3",
+                "engagement_rate": "31.481",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.082",
+                "followers_to_follows_ratio": "6.75",
+                "updated_at": "2026-03-10T18:45:17.000000Z"
+            },
+            {
+                "followers_count": 27,
+                "follows_count": 4,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 98,
+                "total_comments_analyzed": 4,
+                "average_likes": "8.2",
+                "average_comments": "0.3",
+                "engagement_rate": "31.481",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.082",
+                "followers_to_follows_ratio": "6.75",
+                "updated_at": "2026-03-09T21:31:35.000000Z"
+            },
+            {
+                "followers_count": 27,
+                "follows_count": 4,
+                "total_media_count": 12,
+                "analyzed_posts": 12,
+                "total_likes_analyzed": 98,
+                "total_comments_analyzed": 4,
+                "average_likes": "8.2",
+                "average_comments": "0.3",
+                "engagement_rate": "31.481",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.082",
+                "followers_to_follows_ratio": "6.75",
+                "updated_at": "2026-03-10T18:21:00.000000Z"
+            }
+        ]
     },
     "JVELK": {
         "id": "17841471294414458",
@@ -561,7 +1642,54 @@
         "comments_to_likes_ratio": "3.146",
         "followers_to_follows_ratio": "15.08",
         "updated_at": "2026-03-10T18:21:38.000000Z",
-        "local_profile_picture": "/avatars/jvelk.jpg"
+        "local_profile_picture": "/avatars/jvelk.jpg",
+        "updates": [
+            {
+                "followers_count": 181,
+                "follows_count": 12,
+                "total_media_count": 33,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 1621,
+                "total_comments_analyzed": 51,
+                "average_likes": "54.0",
+                "average_comments": "1.7",
+                "engagement_rate": "30.792",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "3.146",
+                "followers_to_follows_ratio": "15.08",
+                "updated_at": "2026-03-10T18:45:55.000000Z"
+            },
+            {
+                "followers_count": 181,
+                "follows_count": 12,
+                "total_media_count": 33,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 1621,
+                "total_comments_analyzed": 51,
+                "average_likes": "54.0",
+                "average_comments": "1.7",
+                "engagement_rate": "30.792",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "3.146",
+                "followers_to_follows_ratio": "15.08",
+                "updated_at": "2026-03-09T21:32:07.000000Z"
+            },
+            {
+                "followers_count": 181,
+                "follows_count": 12,
+                "total_media_count": 33,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 1621,
+                "total_comments_analyzed": 51,
+                "average_likes": "54.0",
+                "average_comments": "1.7",
+                "engagement_rate": "30.792",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "3.146",
+                "followers_to_follows_ratio": "15.08",
+                "updated_at": "2026-03-10T18:21:38.000000Z"
+            }
+        ]
     },
     "MechaKoty": {
         "id": "17841479907771134",
@@ -582,7 +1710,54 @@
         "comments_to_likes_ratio": "4.348",
         "followers_to_follows_ratio": "1.62",
         "updated_at": "2026-03-10T18:21:59.000000Z",
-        "local_profile_picture": "/avatars/mechakoty.jpg"
+        "local_profile_picture": "/avatars/mechakoty.jpg",
+        "updates": [
+            {
+                "followers_count": 21,
+                "follows_count": 13,
+                "total_media_count": 5,
+                "analyzed_posts": 5,
+                "total_likes_analyzed": 46,
+                "total_comments_analyzed": 2,
+                "average_likes": "9.2",
+                "average_comments": "0.4",
+                "engagement_rate": "45.714",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.348",
+                "followers_to_follows_ratio": "1.62",
+                "updated_at": "2026-03-10T18:46:16.000000Z"
+            },
+            {
+                "followers_count": 21,
+                "follows_count": 13,
+                "total_media_count": 5,
+                "analyzed_posts": 5,
+                "total_likes_analyzed": 46,
+                "total_comments_analyzed": 2,
+                "average_likes": "9.2",
+                "average_comments": "0.4",
+                "engagement_rate": "45.714",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.348",
+                "followers_to_follows_ratio": "1.62",
+                "updated_at": "2026-03-09T21:32:25.000000Z"
+            },
+            {
+                "followers_count": 21,
+                "follows_count": 13,
+                "total_media_count": 5,
+                "analyzed_posts": 5,
+                "total_likes_analyzed": 46,
+                "total_comments_analyzed": 2,
+                "average_likes": "9.2",
+                "average_comments": "0.4",
+                "engagement_rate": "45.714",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "4.348",
+                "followers_to_follows_ratio": "1.62",
+                "updated_at": "2026-03-10T18:21:59.000000Z"
+            }
+        ]
     },
     "PJTeam": {
         "id": "17841471708104729",
@@ -603,7 +1778,54 @@
         "comments_to_likes_ratio": "1.859",
         "followers_to_follows_ratio": "2.55",
         "updated_at": "2026-03-10T18:22:59.000000Z",
-        "local_profile_picture": "/avatars/pjteam.jpg"
+        "local_profile_picture": "/avatars/pjteam.jpg",
+        "updates": [
+            {
+                "followers_count": 28,
+                "follows_count": 11,
+                "total_media_count": 31,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 269,
+                "total_comments_analyzed": 5,
+                "average_likes": "9.0",
+                "average_comments": "0.2",
+                "engagement_rate": "32.619",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "1.859",
+                "followers_to_follows_ratio": "2.55",
+                "updated_at": "2026-03-10T18:47:17.000000Z"
+            },
+            {
+                "followers_count": 28,
+                "follows_count": 11,
+                "total_media_count": 31,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 269,
+                "total_comments_analyzed": 5,
+                "average_likes": "9.0",
+                "average_comments": "0.2",
+                "engagement_rate": "32.619",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "1.859",
+                "followers_to_follows_ratio": "2.55",
+                "updated_at": "2026-03-09T21:33:17.000000Z"
+            },
+            {
+                "followers_count": 28,
+                "follows_count": 11,
+                "total_media_count": 31,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 269,
+                "total_comments_analyzed": 5,
+                "average_likes": "9.0",
+                "average_comments": "0.2",
+                "engagement_rate": "32.619",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "1.859",
+                "followers_to_follows_ratio": "2.55",
+                "updated_at": "2026-03-10T18:22:59.000000Z"
+            }
+        ]
     },
     "LogPeak": {
         "id": null,
@@ -644,6 +1866,53 @@
         "comments_to_likes_ratio": "89.744",
         "followers_to_follows_ratio": "7.75",
         "updated_at": "2026-03-10T18:25:03.000000Z",
-        "local_profile_picture": "/avatars/cheerful_studio.jpg"
+        "local_profile_picture": "/avatars/cheerful_studio.jpg",
+        "updates": [
+            {
+                "followers_count": 31,
+                "follows_count": 4,
+                "total_media_count": 4,
+                "analyzed_posts": 4,
+                "total_likes_analyzed": 78,
+                "total_comments_analyzed": 70,
+                "average_likes": "19.5",
+                "average_comments": "17.5",
+                "engagement_rate": "119.355",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "89.744",
+                "followers_to_follows_ratio": "7.75",
+                "updated_at": "2026-03-10T18:52:12.000000Z"
+            },
+            {
+                "followers_count": 31,
+                "follows_count": 4,
+                "total_media_count": 4,
+                "analyzed_posts": 4,
+                "total_likes_analyzed": 78,
+                "total_comments_analyzed": 70,
+                "average_likes": "19.5",
+                "average_comments": "17.5",
+                "engagement_rate": "119.355",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "89.744",
+                "followers_to_follows_ratio": "7.75",
+                "updated_at": "2026-03-09T21:35:06.000000Z"
+            },
+            {
+                "followers_count": 31,
+                "follows_count": 4,
+                "total_media_count": 4,
+                "analyzed_posts": 4,
+                "total_likes_analyzed": 78,
+                "total_comments_analyzed": 70,
+                "average_likes": "19.5",
+                "average_comments": "17.5",
+                "engagement_rate": "119.355",
+                "weekly_posts": "0.00",
+                "comments_to_likes_ratio": "89.744",
+                "followers_to_follows_ratio": "7.75",
+                "updated_at": "2026-03-10T18:25:03.000000Z"
+            }
+        ]
     }
 }
