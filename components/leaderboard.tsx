@@ -5,24 +5,24 @@ import rawData from "../dane.json";
 import { sortOptions, SortField, InstagramAccount } from "@/lib/instagram-data"
 import { LeaderboardCard } from "./leaderboard-card"
 import { ChevronDown, Trophy, ArrowUpDown } from "lucide-react"
+import { DateRangePicker } from "./date-range-picker" // Importujemy nowy komponent
 
 export function Leaderboard() {
   const [sortBy, setSortBy] = useState<SortField>("followers_count")
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   
-  // Stany do obsługi LocalStorage (zabezpieczenie przed błędem hydracji Next.js)
+  // Nowy stan dla kalendarza
+  const [dateRange, setDateRange] = useState<{from: Date | null, to: Date | null}>({from: null, to: null})
+  
   const [isClient, setIsClient] = useState(false)
   const [lastSeenUpdate, setLastSeenUpdate] = useState<string | null>(null)
 
   useEffect(() => {
-    // Odpala się tylko w przeglądarce po pierwszym załadowaniu
     setIsClient(true)
     
-    // 1. Odczytujemy kiedy użytkownik był tu ostatnio
     const storedLastSeen = localStorage.getItem("instagram_last_seen")
     setLastSeenUpdate(storedLastSeen)
 
-    // 2. Szukamy "najświeższej" daty ze wszystkich danych w bazie
     let globalLatestDate = ""
     Object.values(rawData).forEach((team: any) => {
       const history = team.updates || []
@@ -34,11 +34,24 @@ export function Leaderboard() {
       }
     })
 
-    // 3. Zapisujemy nową najświeższą datę do localStorage. 
-    // Przy kolejnym wejściu na stronę, ta nowa data stanie się jego "storedLastSeen".
     if (globalLatestDate && storedLastSeen !== globalLatestDate) {
       localStorage.setItem("instagram_last_seen", globalLatestDate)
     }
+  }, [])
+
+  // Wyciągamy unikalne daty z update'ów dla kropek w kalendarzu
+  const availableUpdateDates = useMemo(() => {
+    const dates = new Set<string>()
+    Object.values(rawData).forEach((team: any) => {
+      const history = team.updates || []
+      history.forEach((u: any) => {
+        if (u.updated_at) {
+          // Zakładamy, że format z JSONa ma w sobie datę (np. ISO), wyciągamy pierwsze 10 znaków (YYYY-MM-DD)
+          dates.add(u.updated_at.split('T')[0]) 
+        }
+      })
+    })
+    return dates
   }, [])
 
   const instagramData = useMemo(() => {
@@ -46,32 +59,43 @@ export function Leaderboard() {
       const base = baseData as any;
       const history = base.updates || [];
       
-      const current = history.length > 0 ? history[history.length - 1] : base;
-      let previous = current; // Domyślnie brak wzrostu (current vs current)
+      let current = history.length > 0 ? history[history.length - 1] : base;
+      let previous = current; 
       
       let growth = { followers: 0, engagement: 0, likes: 0, posts: 0 };
 
-      // Wzrosty liczymy tylko po załadowaniu na kliencie
       if (isClient) {
-        if (!lastSeenUpdate) {
-          // SCENARIUSZ 1: Użytkownik wchodzi PIERWSZY RAZ w życiu
-          // Porównujemy najnowszy update z "bazą" (pierwotnym stanem konta)
-          previous = base;
+        // Jeśli użytkownik wybrał zakres dat, nadpisujemy domyślną logikę LocalStorage
+        if (dateRange.from && dateRange.to) {
+          // Ustawiamy godziny, by złapać wszystko z końca dnia 'to' i od początku dnia 'from'
+          const toTime = new Date(dateRange.to);
+          toTime.setHours(23, 59, 59, 999);
+          
+          const fromTime = new Date(dateRange.from);
+          fromTime.setHours(0, 0, 0, 0);
+
+          // Szukamy najbliższego update'u PRZED LUB RÓWNYM wybranej dacie końcowej
+          const validCurrents = history.filter((u: any) => new Date(u.updated_at) <= toTime);
+          current = validCurrents.length > 0 ? validCurrents[validCurrents.length - 1] : base;
+
+          // Szukamy najbliższego update'u PRZED LUB RÓWNYM wybranej dacie początkowej
+          const validPrevious = history.filter((u: any) => new Date(u.updated_at) <= fromTime);
+          previous = validPrevious.length > 0 ? validPrevious[validPrevious.length - 1] : base;
+          
         } else {
-          // SCENARIUSZ 2: Użytkownik wraca na stronę
-          if (current.updated_at && current.updated_at > lastSeenUpdate) {
-            // Mamy NOWY update, którego jeszcze nie widział!
-            // Szukamy w historii najnowszego wpisu, który widział podczas ostatniej wizyty
-            const seenUpdates = history.filter((u: any) => u.updated_at <= lastSeenUpdate);
-            previous = seenUpdates.length > 0 ? seenUpdates[seenUpdates.length - 1] : base;
+          // Standardowa logika z LocalStorage (Gdy kalendarz jest pusty)
+          if (!lastSeenUpdate) {
+            previous = base;
           } else {
-            // SCENARIUSZ 3: Widział już te dane (odświeżył stronę)
-            // previous pozostaje jako current, więc wzrost wyjdzie 0
-            previous = current; 
+            if (current.updated_at && current.updated_at > lastSeenUpdate) {
+              const seenUpdates = history.filter((u: any) => u.updated_at <= lastSeenUpdate);
+              previous = seenUpdates.length > 0 ? seenUpdates[seenUpdates.length - 1] : base;
+            } else {
+              previous = current; 
+            }
           }
         }
 
-        // Obliczamy matematyczną różnicę
         growth = {
           followers: current.followers_count - previous.followers_count,
           engagement: parseFloat(current.engagement_rate || "0") - parseFloat(previous.engagement_rate || "0"),
@@ -87,12 +111,10 @@ export function Leaderboard() {
         growth: growth     
       };
     });
-  }, [isClient, lastSeenUpdate]); // Ważne: useMemo przeliczy się po odczytaniu z localStorage
+  }, [isClient, lastSeenUpdate, dateRange]); // Dodany dateRange jako zależność
 
   const sortedAccounts = useMemo(() => {
-    const activeAccounts = instagramData.filter(
-      (account) => account.username !== null
-    )
+    const activeAccounts = instagramData.filter((account) => account.username !== null)
 
     return [...activeAccounts].sort((a, b) => {
       let aValue: number
@@ -128,47 +150,55 @@ export function Leaderboard() {
           </div>
         </div>
 
-        {/* Sort Dropdown */}
-        <div className="relative">
-          <button
-            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            className="flex items-center gap-2 px-4 py-2.5 bg-secondary rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium text-foreground w-full sm:w-auto justify-between sm:justify-start"
-          >
-            <ArrowUpDown className="w-4 h-4 text-muted-foreground" />
-            <span>Sortuj: {currentSortLabel}</span>
-            <ChevronDown
-              className={`w-4 h-4 text-muted-foreground transition-transform ${
-                isDropdownOpen ? "rotate-180" : ""
-              }`}
-            />
-          </button>
+        {/* Kontrolki (Filtry / Sortowanie) */}
+        <div className="flex flex-col sm:flex-row gap-3">
+          <DateRangePicker 
+            dateRange={dateRange} 
+            setDateRange={setDateRange} 
+            updateDates={availableUpdateDates} 
+          />
 
-          {isDropdownOpen && (
-            <>
-              <div
-                className="fixed inset-0 z-10"
-                onClick={() => setIsDropdownOpen(false)}
+          <div className="relative">
+            <button
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              className="flex items-center gap-2 px-4 py-2.5 bg-secondary rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium text-foreground w-full sm:w-auto justify-between sm:justify-start"
+            >
+              <ArrowUpDown className="w-4 h-4 text-muted-foreground" />
+              <span>Sortuj: {currentSortLabel}</span>
+              <ChevronDown
+                className={`w-4 h-4 text-muted-foreground transition-transform ${
+                  isDropdownOpen ? "rotate-180" : ""
+                }`}
               />
-              <div className="absolute right-0 mt-2 w-48 bg-card border border-border rounded-lg shadow-xl z-20 overflow-hidden">
-                {sortOptions.map((option) => (
-                  <button
-                    key={option.value}
-                    onClick={() => {
-                      setSortBy(option.value)
-                      setIsDropdownOpen(false)
-                    }}
-                    className={`w-full px-4 py-2.5 text-left text-sm transition-colors ${
-                      sortBy === option.value
-                        ? "bg-primary text-primary-foreground"
-                        : "text-foreground hover:bg-secondary"
-                    }`}
-                  >
-                    {option.label}
-                  </button>
-                ))}
-              </div>
-            </>
-          )}
+            </button>
+
+            {isDropdownOpen && (
+              <>
+                <div
+                  className="fixed inset-0 z-10"
+                  onClick={() => setIsDropdownOpen(false)}
+                />
+                <div className="absolute right-0 mt-2 w-48 bg-card border border-border rounded-lg shadow-xl z-20 overflow-hidden">
+                  {sortOptions.map((option) => (
+                    <button
+                      key={option.value}
+                      onClick={() => {
+                        setSortBy(option.value)
+                        setIsDropdownOpen(false)
+                      }}
+                      className={`w-full px-4 py-2.5 text-left text-sm transition-colors ${
+                        sortBy === option.value
+                          ? "bg-primary text-primary-foreground"
+                          : "text-foreground hover:bg-secondary"
+                      }`}
+                    >
+                      {option.label}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </div>
 

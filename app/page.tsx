@@ -18,7 +18,7 @@ export default function Page() {
           </div>
         </div>
       </header>
-
+      
       {/* Main Content */}
       <div className="px-4 py-8">
         <Leaderboard />
