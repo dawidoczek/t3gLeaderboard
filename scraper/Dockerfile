@@ -6,6 +6,8 @@ WORKDIR /app
 
 # Kopiujemy plik z wymaganiami (jeśli go masz) lub instalujemy biblioteki bezpośrednio
 RUN pip install playwright
+RUN pip install tf-playwright-stealth
+
 # Dodaj inne biblioteki, których używasz (re, json, os są w standardzie)
 
 # Kopiujemy Twój skrypt do kontenera
