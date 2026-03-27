@@ -221,6 +221,44 @@ def zbadaj_profil(username: str, nazwa_konta: str = None):
             
             # [Reszta Twoich obliczeń dla engagement rate itp. zostaje tutaj]
             # ...
+            
+            # 3. OBLICZANIE WSKAŹNIKÓW I FORMATOWANIE DO JSON
+            # Zabezpieczenia przed dzieleniem przez zero (dywizja przez 0 wywala program)
+            avg_likes = (laczne_lajki / zbadane_posty) if zbadane_posty > 0 else 0
+            avg_comments = (laczne_komentarze / zbadane_posty) if zbadane_posty > 0 else 0
+            
+            # Engagement Rate = ((Średnia lajków + Średnia komentarzy) / Followers) * 100
+            if followersi > 0 and zbadane_posty > 0:
+                engagement_rate = ((avg_likes + avg_comments) / followersi) * 100
+            else:
+                engagement_rate = 0
+                
+            comments_to_likes = (laczne_komentarze / laczne_lajki * 100) if laczne_lajki > 0 else 0
+            foll_to_foll_ratio = (followersi / following) if following > 0 else 0
+            
+            # Aktualny czas w formacie UTC ISO 8601
+            aktualny_czas = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000000Z")
+
+            gotowy_json = {
+                "followers_count": followersi,
+                "follows_count": following,
+                "total_media_count": posty,
+                "analyzed_posts": zbadane_posty,
+                "total_likes_analyzed": laczne_lajki,
+                "total_comments_analyzed": laczne_komentarze,
+                "average_likes": f"{avg_likes:.1f}",
+                "average_comments": f"{avg_comments:.1f}",
+                "engagement_rate": f"{engagement_rate:.3f}",
+                "weekly_posts": "0.00", # Ustawione na sztywno, bo Playwright w trybie hover nie widzi dat postów
+                "comments_to_likes_ratio": f"{comments_to_likes:.3f}",
+                "followers_to_follows_ratio": f"{foll_to_foll_ratio:.2f}",
+                "updated_at": aktualny_czas
+            }
+            
+            # Zapis do pliku
+            zapisz_do_json(username, gotowy_json, nazwa_konta=nazwa_konta)
+            context.storage_state(path="state.json") 
+            context.close()
 
         except Exception as e:
             page.screenshot(path=f"updejty/error_{username}.png")
