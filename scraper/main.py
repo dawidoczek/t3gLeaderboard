@@ -4,6 +4,7 @@ import os
 from datetime import datetime, timezone
 from playwright.sync_api import sync_playwright # type: ignore
 import time
+import random
 os.environ["NODE_OPTIONS"] = "--no-deprecation"
 
 
@@ -15,7 +16,6 @@ instagram_handles = {
     "Elektryk Entertainment": "temple_of_echoes",
     "PixelFlower": "theotherworld_pixelflower",
     "ZetaIT": "zetait_",
-    "BlackRadio": None,
     "Playground": "playgroundxstudio",
     "Fundacja Teatrikon": "fundacja.teatrikon",
     "Turniej Trójgamiczny": "turniejtrojgamiczny",
@@ -25,9 +25,7 @@ instagram_handles = {
     "Knedle": "knedle_t3g",
     "Komornicy": "vindigators",
     "Żegluga za Komputerem": "zegluga.za_komputerem",
-    "Cat Marks": None,
     "Mechan": "mechant3g",
-    "NSS Studio": None,
     "Dark District": "darkdistrict.zst",
     "JVELK": "jvelk_",
     "MechaKoty": "mechakoty",
@@ -37,9 +35,12 @@ instagram_handles = {
     "FC Royal Mońki": "royalmonki",
     "Stokrotki": "stokrotkigamedev",
     "BronkDEV": "studio_bronkdevu",
-    "LogPeak": None,
     "Cheerful Studio": "cheerfulstudioofficial"
 }
+
+def losowy_czas(min_ms, max_ms):
+    """Zwraca losowy czas w milisekundach do użycia w wait_for_timeout"""
+    return random.randint(min_ms, max_ms)
 
 def wyciagnij_liczbe(tekst: str) -> int:
     """Zamienia tekst (np. '1,2 tys.', '1.5M', '1 234') na czystą liczbę (int)"""
@@ -120,9 +121,24 @@ def zbadaj_profil(username: str, nazwa_konta: str = None):
             )
             
             page = context.pages[0] if context.pages else context.new_page()
-
-            page.goto(f"https://www.instagram.com/{username}/", wait_until="domcontentloaded")
-
+            while True:
+                page.goto(f"https://www.instagram.com/{username}/", wait_until="domcontentloaded")
+                try:
+                    # Szukamy przycisku "Dismiss" (lub "Odrzuć" w polskim interfejsie)
+                    # Używamy partial text (bez exact=True), żeby wyłapać różne warianty
+                    btn_dismiss = page.locator('button:has-text("Dismiss"), button:has-text("Odrzuć"), div[role="button"]:has-text("Dismiss")').first
+                    
+                    # Czekamy max 4 sekundy na pojawienie się okienka (nie blokujemy skryptu na długo, gdy okienka nie ma)
+                    btn_dismiss.wait_for(state="visible", timeout=4000)
+                    
+                    print(f"[{time.ctime()}] 🚨 Instagram rzucił okienkiem o automatyzacji! Klikam i chłodzę skrypt na 1-2 minuty...")
+                    btn_dismiss.click()
+                    
+                    page.wait_for_timeout(losowy_czas(60000, 120000))
+                    continue
+                        
+                except Exception:
+                    break
             # 1. POBIERANIE GŁÓWNYCH STATYSTYK (Posty, Followers, Following)
             page.wait_for_selector('header', timeout=10000)
             
@@ -165,7 +181,7 @@ def zbadaj_profil(username: str, nazwa_konta: str = None):
                     break
                 if posty>3:
                     page.keyboard.press("End")
-                page.wait_for_timeout(5000)
+                page.wait_for_timeout(losowy_czas(4000, 7000))
                 if page.locator(selektor_postow).count() == aktualna_liczba:
                     break # Koniec profilu
                     
@@ -181,7 +197,7 @@ def zbadaj_profil(username: str, nazwa_konta: str = None):
             
             for post in posty_w_siatce:
                 post.hover()
-                page.wait_for_timeout(400) 
+                page.wait_for_timeout(losowy_czas(400, 800)) 
                 dane_hover = post.locator('ul li').all_inner_texts()
                 
                 if len(dane_hover) >= 2:
@@ -233,10 +249,12 @@ def zbadaj_profil(username: str, nazwa_konta: str = None):
             print(f"\n❌ Błąd: {e}")
 
 if __name__ == "__main__":
-    for nazwa, handle in instagram_handles.items():
+    a = (list(instagram_handles.items()))
+    random.shuffle(a)
+    for nazwa, handle in a:
         if handle:
             zbadaj_profil(handle,nazwa)
-            time.sleep(10)  
+            time.sleep(losowy_czas(10, 30)) # Krótka przerwa między profilami
         else:
             print(f"[{time.ctime()}]⚠️  Brak handle'a Instagram dla drużyny '{nazwa}' - pomijam analizę tego profilu.")
     else:
