@@ -198,7 +198,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "4.762",
                 "followers_to_follows_ratio": "2.00",
-                "updated_at": "2026-03-27T19:48:38.000000Z"
+                "updated_at": "2026-03-28T11:18:46.000000Z"
             }
         ]
     },
@@ -390,8 +390,8 @@
             },
             {
                 "followers_count": 14,
-                "follows_count": 5000000,
-                "total_media_count": 0,
+                "follows_count": 5,
+                "total_media_count": 4,
                 "analyzed_posts": 4,
                 "total_likes_analyzed": 41,
                 "total_comments_analyzed": 3,
@@ -400,8 +400,8 @@
                 "engagement_rate": "78.571",
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "7.317",
-                "followers_to_follows_ratio": "0.00",
-                "updated_at": "2026-03-27T19:49:11.000000Z"
+                "followers_to_follows_ratio": "2.80",
+                "updated_at": "2026-03-28T11:19:07.000000Z"
             }
         ]
     },
@@ -594,7 +594,7 @@
             {
                 "followers_count": 2,
                 "follows_count": 1,
-                "total_media_count": 0,
+                "total_media_count": 6,
                 "analyzed_posts": 6,
                 "total_likes_analyzed": 8,
                 "total_comments_analyzed": 0,
@@ -604,7 +604,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "0.000",
                 "followers_to_follows_ratio": "2.00",
-                "updated_at": "2026-03-27T19:50:33.000000Z"
+                "updated_at": "2026-03-28T11:19:59.000000Z"
             }
         ]
     },
@@ -807,7 +807,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "21.053",
                 "followers_to_follows_ratio": "0.72",
-                "updated_at": "2026-03-27T19:53:01.000000Z"
+                "updated_at": "2026-03-28T11:21:55.000000Z"
             }
         ]
     },
@@ -998,19 +998,19 @@
                 "updated_at": "2026-03-26T13:28:36.000000Z"
             },
             {
-                "followers_count": 44000,
-                "follows_count": 2000,
-                "total_media_count": 0,
-                "analyzed_posts": 12,
-                "total_likes_analyzed": 256,
+                "followers_count": 44,
+                "follows_count": 2,
+                "total_media_count": 14,
+                "analyzed_posts": 14,
+                "total_likes_analyzed": 319,
                 "total_comments_analyzed": 1,
-                "average_likes": "21.3",
+                "average_likes": "22.8",
                 "average_comments": "0.1",
-                "engagement_rate": "0.049",
+                "engagement_rate": "51.948",
                 "weekly_posts": "0.00",
-                "comments_to_likes_ratio": "0.391",
+                "comments_to_likes_ratio": "0.313",
                 "followers_to_follows_ratio": "22.00",
-                "updated_at": "2026-03-27T19:54:15.000000Z"
+                "updated_at": "2026-03-28T11:22:46.000000Z"
             }
         ]
     },
@@ -1203,17 +1203,17 @@
             {
                 "followers_count": 34,
                 "follows_count": 12,
-                "total_media_count": 0,
-                "analyzed_posts": 12,
-                "total_likes_analyzed": 156,
+                "total_media_count": 15,
+                "analyzed_posts": 15,
+                "total_likes_analyzed": 239,
                 "total_comments_analyzed": 6,
-                "average_likes": "13.0",
-                "average_comments": "0.5",
-                "engagement_rate": "39.706",
+                "average_likes": "15.9",
+                "average_comments": "0.4",
+                "engagement_rate": "48.039",
                 "weekly_posts": "0.00",
-                "comments_to_likes_ratio": "3.846",
+                "comments_to_likes_ratio": "2.510",
                 "followers_to_follows_ratio": "2.83",
-                "updated_at": "2026-03-27T19:54:58.000000Z"
+                "updated_at": "2026-03-28T11:23:17.000000Z"
             }
         ]
     },
@@ -1416,7 +1416,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "6.316",
                 "followers_to_follows_ratio": "4.14",
-                "updated_at": "2026-03-27T19:55:38.000000Z"
+                "updated_at": "2026-03-28T11:23:41.000000Z"
             }
         ]
     },
@@ -1619,7 +1619,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "9.091",
                 "followers_to_follows_ratio": "0.00",
-                "updated_at": "2026-03-27T19:56:05.000000Z"
+                "updated_at": "2026-03-28T11:24:00.000000Z"
             }
         ]
     },
@@ -1812,17 +1812,17 @@
             {
                 "followers_count": 22,
                 "follows_count": 15,
-                "total_media_count": 0,
+                "total_media_count": 11,
                 "analyzed_posts": 11,
-                "total_likes_analyzed": 1933,
+                "total_likes_analyzed": 1931,
                 "total_comments_analyzed": 16,
-                "average_likes": "175.7",
+                "average_likes": "175.5",
                 "average_comments": "1.5",
-                "engagement_rate": "805.372",
+                "engagement_rate": "804.545",
                 "weekly_posts": "0.00",
-                "comments_to_likes_ratio": "0.828",
+                "comments_to_likes_ratio": "0.829",
                 "followers_to_follows_ratio": "1.47",
-                "updated_at": "2026-03-27T19:58:48.000000Z"
+                "updated_at": "2026-03-28T11:25:54.000000Z"
             }
         ]
     },
@@ -2015,17 +2015,17 @@
             {
                 "followers_count": 90,
                 "follows_count": 52,
-                "total_media_count": 0,
-                "analyzed_posts": 12,
-                "total_likes_analyzed": 238,
-                "total_comments_analyzed": 19,
-                "average_likes": "19.8",
-                "average_comments": "1.6",
-                "engagement_rate": "23.796",
+                "total_media_count": 32,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 764,
+                "total_comments_analyzed": 32,
+                "average_likes": "25.5",
+                "average_comments": "1.1",
+                "engagement_rate": "29.481",
                 "weekly_posts": "0.00",
-                "comments_to_likes_ratio": "7.983",
+                "comments_to_likes_ratio": "4.188",
                 "followers_to_follows_ratio": "1.73",
-                "updated_at": "2026-03-27T20:00:07.000000Z"
+                "updated_at": "2026-03-28T11:27:09.000000Z"
             }
         ]
     },
@@ -2216,19 +2216,19 @@
                 "updated_at": "2026-03-26T13:33:19.000000Z"
             },
             {
-                "followers_count": 5000,
-                "follows_count": 4000,
-                "total_media_count": 0,
+                "followers_count": 5,
+                "follows_count": 4,
+                "total_media_count": 2,
                 "analyzed_posts": 2,
                 "total_likes_analyzed": 4,
                 "total_comments_analyzed": 0,
                 "average_likes": "2.0",
                 "average_comments": "0.0",
-                "engagement_rate": "0.040",
+                "engagement_rate": "40.000",
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "0.000",
                 "followers_to_follows_ratio": "1.25",
-                "updated_at": "2026-03-27T20:00:36.000000Z"
+                "updated_at": "2026-03-28T11:27:29.000000Z"
             }
         ]
     },
@@ -2423,15 +2423,15 @@
                 "follows_count": 9,
                 "total_media_count": 14,
                 "analyzed_posts": 14,
-                "total_likes_analyzed": 210,
+                "total_likes_analyzed": 211,
                 "total_comments_analyzed": 22,
-                "average_likes": "15.0",
+                "average_likes": "15.1",
                 "average_comments": "1.6",
-                "engagement_rate": "63.736",
+                "engagement_rate": "64.011",
                 "weekly_posts": "0.00",
-                "comments_to_likes_ratio": "10.476",
+                "comments_to_likes_ratio": "10.427",
                 "followers_to_follows_ratio": "2.89",
-                "updated_at": "2026-03-27T20:01:25.000000Z"
+                "updated_at": "2026-03-28T11:28:01.000000Z"
             }
         ]
     },
@@ -2622,19 +2622,19 @@
                 "updated_at": "2026-03-26T13:34:22.000000Z"
             },
             {
-                "followers_count": 27,
+                "followers_count": 28,
                 "follows_count": 21,
-                "total_media_count": 0,
-                "analyzed_posts": 12,
-                "total_likes_analyzed": 66,
-                "total_comments_analyzed": 6,
-                "average_likes": "5.5",
+                "total_media_count": 15,
+                "analyzed_posts": 15,
+                "total_likes_analyzed": 94,
+                "total_comments_analyzed": 8,
+                "average_likes": "6.3",
                 "average_comments": "0.5",
-                "engagement_rate": "22.222",
+                "engagement_rate": "24.286",
                 "weekly_posts": "0.00",
-                "comments_to_likes_ratio": "9.091",
-                "followers_to_follows_ratio": "1.29",
-                "updated_at": "2026-03-27T20:02:06.000000Z"
+                "comments_to_likes_ratio": "8.511",
+                "followers_to_follows_ratio": "1.33",
+                "updated_at": "2026-03-28T11:28:32.000000Z"
             }
         ]
     },
@@ -2837,7 +2837,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "14.286",
                 "followers_to_follows_ratio": "3.40",
-                "updated_at": "2026-03-27T19:46:30.000000Z"
+                "updated_at": "2026-03-28T11:17:22.000000Z"
             }
         ]
     },
@@ -3040,7 +3040,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "0.000",
                 "followers_to_follows_ratio": "4.75",
-                "updated_at": "2026-03-27T19:46:58.000000Z"
+                "updated_at": "2026-03-28T11:17:42.000000Z"
             }
         ]
     },
@@ -3231,19 +3231,19 @@
                 "updated_at": "2026-03-26T13:23:52.000000Z"
             },
             {
-                "followers_count": 59000,
-                "follows_count": 11000,
-                "total_media_count": 0,
+                "followers_count": 59,
+                "follows_count": 11,
+                "total_media_count": 8,
                 "analyzed_posts": 8,
                 "total_likes_analyzed": 190,
                 "total_comments_analyzed": 6,
                 "average_likes": "23.8",
                 "average_comments": "0.8",
-                "engagement_rate": "0.042",
+                "engagement_rate": "41.525",
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "3.158",
                 "followers_to_follows_ratio": "5.36",
-                "updated_at": "2026-03-27T19:47:37.000000Z"
+                "updated_at": "2026-03-28T11:18:05.000000Z"
             }
         ]
     },
@@ -3446,7 +3446,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "14.516",
                 "followers_to_follows_ratio": "3.00",
-                "updated_at": "2026-03-27T19:48:08.000000Z"
+                "updated_at": "2026-03-28T11:18:26.000000Z"
             }
         ]
     },
@@ -3649,7 +3649,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "2.358",
                 "followers_to_follows_ratio": "1.55",
-                "updated_at": "2026-03-27T19:50:01.000000Z"
+                "updated_at": "2026-03-28T11:19:37.000000Z"
             }
         ]
     },
@@ -3862,17 +3862,17 @@
             {
                 "followers_count": 794,
                 "follows_count": 28,
-                "total_media_count": 0,
-                "analyzed_posts": 12,
-                "total_likes_analyzed": 270,
-                "total_comments_analyzed": 27,
-                "average_likes": "22.5",
-                "average_comments": "2.2",
-                "engagement_rate": "3.117",
+                "total_media_count": 494,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 828,
+                "total_comments_analyzed": 56,
+                "average_likes": "27.6",
+                "average_comments": "1.9",
+                "engagement_rate": "3.711",
                 "weekly_posts": "0.00",
-                "comments_to_likes_ratio": "10.000",
+                "comments_to_likes_ratio": "6.763",
                 "followers_to_follows_ratio": "28.36",
-                "updated_at": "2026-03-27T19:51:16.000000Z"
+                "updated_at": "2026-03-28T11:20:37.000000Z"
             }
         ]
     },
@@ -4063,19 +4063,19 @@
                 "updated_at": "2026-03-26T13:27:04.000000Z"
             },
             {
-                "followers_count": 254000,
-                "follows_count": 64000,
-                "total_media_count": 0,
-                "analyzed_posts": 12,
-                "total_likes_analyzed": 286,
-                "total_comments_analyzed": 3,
-                "average_likes": "23.8",
-                "average_comments": "0.2",
-                "engagement_rate": "0.009",
+                "followers_count": 254,
+                "follows_count": 64,
+                "total_media_count": 80,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 515,
+                "total_comments_analyzed": 10,
+                "average_likes": "17.2",
+                "average_comments": "0.3",
+                "engagement_rate": "6.890",
                 "weekly_posts": "0.00",
-                "comments_to_likes_ratio": "1.049",
+                "comments_to_likes_ratio": "1.942",
                 "followers_to_follows_ratio": "3.97",
-                "updated_at": "2026-03-27T19:51:58.000000Z"
+                "updated_at": "2026-03-28T11:21:16.000000Z"
             }
         ]
     },
@@ -4268,7 +4268,7 @@
             {
                 "followers_count": 9,
                 "follows_count": 0,
-                "total_media_count": 0,
+                "total_media_count": 1,
                 "analyzed_posts": 1,
                 "total_likes_analyzed": 7,
                 "total_comments_analyzed": 3,
@@ -4278,7 +4278,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "42.857",
                 "followers_to_follows_ratio": "0.00",
-                "updated_at": "2026-03-27T19:52:28.000000Z"
+                "updated_at": "2026-03-28T11:21:34.000000Z"
             }
         ]
     },
@@ -4471,7 +4471,7 @@
             {
                 "followers_count": 77,
                 "follows_count": 2,
-                "total_media_count": 0,
+                "total_media_count": 7,
                 "analyzed_posts": 7,
                 "total_likes_analyzed": 234,
                 "total_comments_analyzed": 23,
@@ -4481,7 +4481,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "9.829",
                 "followers_to_follows_ratio": "38.50",
-                "updated_at": "2026-03-27T19:53:35.000000Z"
+                "updated_at": "2026-03-28T11:22:17.000000Z"
             }
         ]
     },
@@ -4724,7 +4724,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "3.636",
                 "followers_to_follows_ratio": "7.75",
-                "updated_at": "2026-03-27T19:56:54.000000Z"
+                "updated_at": "2026-03-28T11:24:30.000000Z"
             }
         ]
     },
@@ -4917,17 +4917,17 @@
             {
                 "followers_count": 222,
                 "follows_count": 12,
-                "total_media_count": 0,
-                "analyzed_posts": 12,
-                "total_likes_analyzed": 750,
-                "total_comments_analyzed": 3,
-                "average_likes": "62.5",
-                "average_comments": "0.2",
-                "engagement_rate": "28.266",
+                "total_media_count": 35,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 2377,
+                "total_comments_analyzed": 50,
+                "average_likes": "79.2",
+                "average_comments": "1.7",
+                "engagement_rate": "36.441",
                 "weekly_posts": "0.00",
-                "comments_to_likes_ratio": "0.400",
+                "comments_to_likes_ratio": "2.103",
                 "followers_to_follows_ratio": "18.50",
-                "updated_at": "2026-03-27T19:57:35.000000Z"
+                "updated_at": "2026-03-28T11:25:08.000000Z"
             }
         ]
     },
@@ -5130,7 +5130,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "3.922",
                 "followers_to_follows_ratio": "1.69",
-                "updated_at": "2026-03-27T19:58:08.000000Z"
+                "updated_at": "2026-03-28T11:25:30.000000Z"
             }
         ]
     },
@@ -5321,19 +5321,19 @@
                 "updated_at": "2026-03-26T13:32:22.000000Z"
             },
             {
-                "followers_count": 29000,
-                "follows_count": 19000,
-                "total_media_count": 0,
-                "analyzed_posts": 12,
-                "total_likes_analyzed": 94,
-                "total_comments_analyzed": 2,
-                "average_likes": "7.8",
+                "followers_count": 29,
+                "follows_count": 19,
+                "total_media_count": 33,
+                "analyzed_posts": 30,
+                "total_likes_analyzed": 275,
+                "total_comments_analyzed": 5,
+                "average_likes": "9.2",
                 "average_comments": "0.2",
-                "engagement_rate": "0.028",
+                "engagement_rate": "32.184",
                 "weekly_posts": "0.00",
-                "comments_to_likes_ratio": "2.128",
+                "comments_to_likes_ratio": "1.818",
                 "followers_to_follows_ratio": "1.53",
-                "updated_at": "2026-03-27T19:59:29.000000Z"
+                "updated_at": "2026-03-28T11:26:31.000000Z"
             }
         ]
     },
@@ -5546,7 +5546,7 @@
             {
                 "followers_count": 32,
                 "follows_count": 4,
-                "total_media_count": 0,
+                "total_media_count": 4,
                 "analyzed_posts": 4,
                 "total_likes_analyzed": 75,
                 "total_comments_analyzed": 59,
@@ -5556,7 +5556,7 @@
                 "weekly_posts": "0.00",
                 "comments_to_likes_ratio": "78.667",
                 "followers_to_follows_ratio": "8.00",
-                "updated_at": "2026-03-27T20:02:36.000000Z"
+                "updated_at": "2026-03-28T11:28:52.000000Z"
             }
         ]
     }
