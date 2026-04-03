@@ -10,6 +10,7 @@ Dawid Rej
 # T3G Leaderboard
 
 Aplikacja webowa (Next.js) pokazujaca ranking druzyn Turnieju Trojgamicznego na podstawie statystyk z Instagrama.
+<img width="1920" height="1080" alt="undefined" src="https://github.com/user-attachments/assets/85ae1e22-1787-457e-bc20-ec379085a0e1" />
 
 ## Co robi projekt
 
