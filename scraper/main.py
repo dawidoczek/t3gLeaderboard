@@ -112,7 +112,7 @@ def zbadaj_profil(username: str, nazwa_konta: str = None):
     with sync_playwright() as p:
         try:
             browser = p.chromium.launch(
-                headless=False,
+                headless=True,
                 args=["--no-sandbox", "--disable-dev-shm-usage"]
             )
             context = browser.new_context(
