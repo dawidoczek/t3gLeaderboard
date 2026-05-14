@@ -2,6 +2,7 @@ services:
   insta-scraper:
     build: .
     volumes:
+      - .:/app
       - ./state.json:/app/state.json
       - ./updejty:/app/updejty            # Tu lądują wyniki updateX.json
     environment:
