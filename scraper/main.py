@@ -112,7 +112,7 @@ def zbadaj_profil(username: str, nazwa_konta: str = None):
     with sync_playwright() as p:
         try:
             browser = p.chromium.launch(
-                headless=True,
+                headless=False,
                 args=["--no-sandbox", "--disable-dev-shm-usage"]
             )
             context = browser.new_context(
@@ -144,20 +144,23 @@ def zbadaj_profil(username: str, nazwa_konta: str = None):
             
             # Zakładamy, że pierwsza znaleziona sekcja z tekstem to ta z danymi
             sekcja_danych = page.locator('header section').nth(1)
-            
+            pelny_tekst = sekcja_danych.inner_text()
             posty, followersi, following = 0, 0, 0
             
             try:
                 # Szukamy followersów
-                followers_loc = sekcja_danych.locator('a[href*="/followers/"] span').first
-                if followers_loc.is_visible():
-                    followersi = wyciagnij_liczbe(followers_loc.get_attribute("title") or followers_loc.inner_text())
+                followers_match = re.search(r'([\d\s.,\xa0]+)\s*(?:follower|obserwujący|obserwujących)', pelny_tekst, re.IGNORECASE)
+                if followers_match:
+                    # Próbujemy najpierw wyciągnąć dokładną liczbę z atrybutu 'title' (jeśli najedziemy na element)
+                    # ale skoro chcemy regex, to bierzemy to co złapał match
+                    followersi = wyciagnij_liczbe(followers_match.group(1))
                 
                 # Szukamy obserwowanych (following)
                 following_loc = sekcja_danych.locator('a[href*="/following/"] span').first
-                if following_loc.is_visible():
-                    following = wyciagnij_liczbe(following_loc.inner_text())
-                    
+                following_match = re.search(r'([\d\s.,\xa0]+)\s*(?:following|obserwowani|obserwuje)', pelny_tekst, re.IGNORECASE)
+                if following_match:
+                    following = wyciagnij_liczbe(following_match.group(1))
+                print(f"[{time.ctime()}]📊 Statystyki dla @{username}: Followers={followersi}, Following={following}")
                 # Szukamy postów (regexem w tekście)
                 wszystkie_teksty = sekcja_danych.inner_text().lower()
                 posty_match = re.search(r'([\d\s,\.]+)\s*post', wszystkie_teksty)
